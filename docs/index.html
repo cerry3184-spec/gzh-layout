@@ -26,6 +26,13 @@
   .sub{font-size:14px;color:var(--dim);line-height:1.9;margin:0}
   .sub b{color:var(--red)}
   .cards{display:grid;gap:16px;margin:36px 0 40px}
+  .shot{margin:0 0 26px;text-align:center}
+  .shot img{
+    width:100%;max-width:720px;display:block;margin:0 auto;
+    border:1px solid var(--cream);border-radius:6px;
+    box-shadow:0 4px 20px rgba(181,16,17,.08);
+  }
+  .shot .cap{font-size:12.5px;color:var(--dim);margin:12px 0 0;line-height:1.7}
   .flow{
     background:#fff;border:1px dashed var(--cream);border-radius:6px;
     padding:24px 20px;margin:0;text-align:center;
@@ -77,6 +84,11 @@
     <h1>通稿一键排进秀米</h1>
     <p class="sub">素材丢给 AI → 自动排版 → <b>直接写进你的秀米编辑器</b><br>不用复制粘贴，不用调样式，不用重新传图</p>
   </header>
+
+  <div class="shot">
+    <img src="demo-inject.gif" alt="自动注入秀米编辑器的过程">
+    <p class="cap">↑ 真实录屏：AI 填好标题、把整篇排版写进秀米编辑器，全程无人干预</p>
+  </div>
 
   <div class="flow">
     <div class="step"><span class="n">1</span>你把素材发给 AI</div>

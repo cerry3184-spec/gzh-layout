@@ -26,3 +26,6 @@ desktop.ini
 images/discuss.png
 images/site.png
 images/vote.png
+
+# 录屏临时文件
+_record/
