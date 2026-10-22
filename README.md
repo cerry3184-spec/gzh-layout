@@ -1,4 +1,6 @@
-# gzh-layout · 通稿一键排进秀米
+# 牵引秀米导入器
+
+通稿一键排进秀米。素材 → 排版 → **自动写进你的编辑器**，不用复制粘贴。
 
 素材 → 排版 HTML → **自动写进你的秀米编辑器**。
 
@@ -7,7 +9,7 @@
 不用复制粘贴 HTML，不用手动调样式，不用装插件。AI 把整篇排版（含图片）一次性灌进秀米正文区，
 你在编辑器里看一眼，点保存就完事。
 
-### 👉 [先看效果](https://cerry3184-spec.github.io/gzh-layout/)
+### 👉 [先看效果](https://cerry3184-spec.github.io/qianyin-xiumi/)
 
 ---
 
@@ -98,8 +100,8 @@ AI 会自己下载、装环境、问你剩下的信息、生成排版、**然后
 ## 第 1 步：安装
 
 ```bash
-git clone https://github.com/cerry3184-spec/gzh-layout.git
-cd gzh-layout
+git clone https://github.com/cerry3184-spec/qianyin-xiumi.git
+cd qianyin-xiumi
 pip install playwright
 ```
 
@@ -269,7 +271,7 @@ font_scale / footer_qr / editor / first / second / third
 ## 目录
 
 ```
-gzh-layout/
+qianyin-xiumi/
 ├── build_gonggao.py          排版引擎（25+ 组件）
 ├── 示例-年度表彰大会.json/.html
 ├── 示例-养老服务驿站.json/.html
