@@ -24,7 +24,23 @@
     color:var(--red);letter-spacing:1px;font-weight:700;
   }
   .sub{font-size:14px;color:var(--dim);line-height:1.9;margin:0}
+  .sub b{color:var(--red)}
   .cards{display:grid;gap:16px;margin:36px 0 40px}
+  .flow{
+    background:#fff;border:1px dashed var(--cream);border-radius:6px;
+    padding:24px 20px;margin:0;text-align:center;
+    box-shadow:0 0 2px 1px var(--cream);
+  }
+  .step{display:block;font-size:13.5px;line-height:1.6;color:var(--text)}
+  .step .n{
+    display:inline-block;width:20px;height:20px;line-height:20px;
+    background:var(--cream);color:var(--brown);border-radius:3px;
+    font-size:12px;font-weight:700;margin-right:8px;text-align:center;
+    vertical-align:1px;
+  }
+  .step.key{color:var(--red);font-weight:700;font-size:14.5px}
+  .step.key .n{background:var(--red);color:#fff}
+  .arrow{font-size:11px;color:#c9b9ac;line-height:1.2;margin:3px 0}
   @media(min-width:620px){.cards{grid-template-columns:1fr 1fr}}
   a.card{
     display:block;text-decoration:none;color:inherit;
@@ -58,28 +74,44 @@
 
   <header>
     <div class="bar"></div>
-    <h1>公众号通稿排版器</h1>
-    <p class="sub">把文字素材变成能直接进秀米的排版图文<br>25+ 组件 · 中老年字号适配 · AI 可直接操作</p>
+    <h1>通稿一键排进秀米</h1>
+    <p class="sub">素材丢给 AI → 自动排版 → <b>直接写进你的秀米编辑器</b><br>不用复制粘贴，不用调样式，不用重新传图</p>
   </header>
+
+  <div class="flow">
+    <div class="step"><span class="n">1</span>你把素材发给 AI</div>
+    <div class="arrow">↓</div>
+    <div class="step"><span class="n">2</span>自动生成排版（图片已内嵌）</div>
+    <div class="arrow">↓</div>
+    <div class="step key"><span class="n">3</span>直接注入秀米编辑器</div>
+    <div class="arrow">↓</div>
+    <div class="step"><span class="n">4</span>你看一眼，自己点保存</div>
+  </div>
 
   <div class="cards">
     <a class="card" href="demo-award.html">
       <span class="tag">标准字号</span>
       <h2>年度总结暨表彰大会</h2>
       <p>学校、单位常用题材。完整通稿结构：工作回顾、表彰决定、领导讲话、四类名单。</p>
-      <span class="go">查看效果 →</span>
+      <span class="go">查看排版效果 →</span>
     </a>
     <a class="card" href="demo-elderly.html">
       <span class="tag alt">字号 1.2 倍</span>
       <h2>社区养老服务驿站启用</h2>
       <p>面向中老年读者。正文 16.8px，重点突出「几点开门、多少钱、怎么办、问谁」。</p>
-      <span class="go">查看效果 →</span>
+      <span class="go">查看排版效果 →</span>
     </a>
   </div>
 
   <div class="note">
+    <b>重点不在排版，在省掉搬运。</b><br>
+    大多数工具生成完 HTML 就结束了，剩下的复制、粘贴、修样式、重传图片还得你自己来。
+    这里直接写进编辑器——标题填好、正文就位、图片一起进去，你在秀米里看一眼就能发布。
+  </div>
+
+  <div class="note" style="margin-top:14px">
     <b>怎么用：</b>把仓库地址复制给你的 AI 助手，说一句
-    「帮我装一下这个，然后做一篇公众号推文」，再附上素材即可。<br>
+    「帮我装一下这个，然后做一篇公众号推文，做完直接放进秀米」，再附上素材即可。<br>
     仓库的 README 里写好了给 AI 看的操作手册，它会自己下载、安装、问你要信息。
   </div>
 
