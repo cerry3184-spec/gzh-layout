@@ -59,7 +59,7 @@ AI 会自己下载、装环境、问你剩下的信息、生成排版，最后�
 ## 第 1 步：安装
 
 ```bash
-git clone <本仓库地址>
+git clone https://github.com/cerry3184-spec/gzh-layout.git
 cd gzh-layout
 pip install playwright
 ```
