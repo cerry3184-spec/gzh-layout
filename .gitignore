@@ -1,0 +1,28 @@
+# 私有：当前在办的稿件与产物，不进仓库
+gonggao_data.json
+layout_final.html
+draft_v1.md
+
+# 登录凭证，绝对不能提交
+xiumi_auth.json
+mp_auth.json
+*.auth.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 系统与编辑器
+.workbuddy/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 学代会旧测试图（示例不用）
+images/discuss.png
+images/site.png
+images/vote.png
