@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gzh-layout · 公众号通稿排版器</title>
+<style>
+  :root{
+    --red:#B51011; --brown:#9A4335; --cream:#F5DDC9;
+    --card:#FEFDFC; --alt:#FEFAF8; --text:#3E3E3E; --dim:#8a7f78;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0 20px 60px;
+    background:#FDFBF9;
+    font-family:"PingFang SC","Microsoft YaHei",-apple-system,sans-serif;
+    color:var(--text); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  header{padding:56px 0 34px;text-align:center}
+  .bar{width:54px;height:3px;background:var(--red);margin:0 auto 22px}
+  h1{
+    font-size:26px;line-height:1.5;margin:0 0 14px;
+    color:var(--red);letter-spacing:1px;font-weight:700;
+  }
+  .sub{font-size:14px;color:var(--dim);line-height:1.9;margin:0}
+  .cards{display:grid;gap:16px;margin:36px 0 40px}
+  @media(min-width:620px){.cards{grid-template-columns:1fr 1fr}}
+  a.card{
+    display:block;text-decoration:none;color:inherit;
+    background:var(--card);border:1px dashed var(--cream);border-radius:6px;
+    padding:24px 22px;box-shadow:0 0 2px 1px var(--cream);
+    transition:transform .18s ease,box-shadow .18s ease;
+  }
+  a.card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(181,16,17,.10)}
+  .tag{
+    display:inline-block;background:var(--red);color:#fff;font-size:12px;
+    padding:3px 10px;border-radius:3px;letter-spacing:1px;margin-bottom:14px;
+  }
+  .tag.alt{background:var(--brown)}
+  .card h2{font-size:17px;margin:0 0 10px;color:var(--brown);line-height:1.5}
+  .card p{font-size:13.5px;line-height:1.85;color:var(--dim);margin:0 0 14px}
+  .go{font-size:13px;color:var(--red);font-weight:600}
+  .note{
+    background:var(--alt);border-radius:6px;padding:20px 22px;
+    font-size:13.5px;line-height:1.9;color:var(--text);
+  }
+  .note b{color:var(--brown)}
+  footer{
+    margin-top:44px;padding-top:22px;border-top:1px solid var(--cream);
+    font-size:12.5px;color:var(--dim);text-align:center;line-height:2;
+  }
+  footer a{color:var(--red);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="bar"></div>
+    <h1>公众号通稿排版器</h1>
+    <p class="sub">把文字素材变成能直接进秀米的排版图文<br>25+ 组件 · 中老年字号适配 · AI 可直接操作</p>
+  </header>
+
+  <div class="cards">
+    <a class="card" href="demo-award.html">
+      <span class="tag">标准字号</span>
+      <h2>年度总结暨表彰大会</h2>
+      <p>学校、单位常用题材。完整通稿结构：工作回顾、表彰决定、领导讲话、四类名单。</p>
+      <span class="go">查看效果 →</span>
+    </a>
+    <a class="card" href="demo-elderly.html">
+      <span class="tag alt">字号 1.2 倍</span>
+      <h2>社区养老服务驿站启用</h2>
+      <p>面向中老年读者。正文 16.8px，重点突出「几点开门、多少钱、怎么办、问谁」。</p>
+      <span class="go">查看效果 →</span>
+    </a>
+  </div>
+
+  <div class="note">
+    <b>怎么用：</b>把仓库地址复制给你的 AI 助手，说一句
+    「帮我装一下这个，然后做一篇公众号推文」，再附上素材即可。<br>
+    仓库的 README 里写好了给 AI 看的操作手册，它会自己下载、安装、问你要信息。
+  </div>
+
+  <footer>
+    <a href="https://github.com/cerry3184-spec/gzh-layout">github.com/cerry3184-spec/gzh-layout</a><br>
+    MIT License · 秀米注入部分来自 gzh-content-skill
+  </footer>
+
+</div>
+</body>
+</html>
